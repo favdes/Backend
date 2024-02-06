@@ -1,10 +1,10 @@
-const USER_ROLE = require('../model/userRoleModel');
+const USER_ROLE = require('../model/taskRoleModel');
 
 // post users, C-- for create
 
 const create_user =  async (req, res)=>{
     try{
-        const user =await USER_ROLE.create(req.body);
+        const user = await USER_ROLE.create(req.body);
         res.status(201).json({msg:"created successfully"})
 
     }catch(error){

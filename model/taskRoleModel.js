@@ -38,5 +38,5 @@ const userRoleSchema = new Schema(
   { timestamps: true }
 );
 
-const USERROLE = mongoose.model("User", userRoleSchema);
-module.exports = USERROLE;
+const USER_ROLE = mongoose.model("User", userRoleSchema);
+module.exports = USER_ROLE;
